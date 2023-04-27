@@ -10,9 +10,42 @@
 
 /* MAIN CONTENT  */
 .main-content {
-    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
+.projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects-title {
+    grid-column: 1 / 3;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-icons {
+    align-self: end;
+}
+
+/* .trending {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.trending-title {
+    grid-column: 1 / 3;
+} */
+
+.trending-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
 
 /* HEADER */
 .header {
