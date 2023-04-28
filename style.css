@@ -55,12 +55,17 @@ button {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 20px;
+    background-color: #d9f99d;
+    margin-top: 5px;
+    gap: 10px;
 }
 
 .projects {
     grid-row: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content: space-between;
 }
 
 .projects-title {
@@ -70,14 +75,79 @@ button {
 .project {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    border-left: 5px solid #84cc16;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0px 10px 10px -5px #84cc16;
+}
+
+.project-header {
+    font-size: small;
+    font-weight: 700;
+}
+
+.project-content {
+    font-size: x-small;
 }
 
 .project-icons {
-    align-self: end;
+    display: flex;
+    justify-content: end;
+}
+
+.main-content-header {
+    font-size: large;
+    font-weight: bold;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.announcement-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0px 10px 10px -5px #84cc16;
+}
+
+.announcement {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.announcement-title {
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.announcement-body {
+    font-size: xx-small;
+}
+
+.trending {
+    font-size: x-small;
+}
+
+.trending-title {
+    padding-top: 10px;
 }
 
 .trending-content {
     display: grid;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 10px 10px -5px #84cc16;
+    gap: 10px;
+    align-items: center;
     grid-template-columns: 1fr 3fr;
 }
 
@@ -87,6 +157,8 @@ button {
     grid-template-columns: 2fr 1fr;
     padding: 10px 20px;
     gap: 20px;
+    box-shadow: 0px 10px 10px -5px #84cc16;
+    /* border-bottom: 3px solid lightgray; */
 }
 
 .header-top-left,
